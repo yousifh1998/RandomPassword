@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:sans-serif;
+    background-color: tan;
+
+}
+
+.wrapper {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+    color: darkgray
+
+}
+
+.card {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 30px;
+}
