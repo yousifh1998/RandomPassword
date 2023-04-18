@@ -7,4 +7,4 @@ function WritePassword() {
     passwordText.value = password;
 }
 
-generateBTN.addEventListener("click", writePassword);
+generateBTN.addEventListener("click", WritePassword);
