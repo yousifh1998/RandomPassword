@@ -1,17 +1,42 @@
-var generateBTN = document.querySelector("#genearate");
+const resultEL = document.getElementById('result');
+const lengthEL = document.getElementById('length');
+const uppercaseEL = document.getElementById('uppercase');
+const lowercaseEL = document.getElementById('lowercase');
+const numbersEL = document.getElementById('numbers');
+const symbolsEL = document.getElementById('symbols');
+const generateEl = document.getElementById('generate');
+const clipboardEL = document.getElementById('clipboard');
 
-function generatePassword() {
-  console.log("You clicked the button!");
-   
-  return "Generated Password will go here!";
+
+
+
+const randomFunc = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    Symbol: getRandomSymbol
+};
+
+generateEl.addEventListener('click', () => {
+    const length = lengthEl.value;
+
+    console.log(length);
+});
+
+function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) +97);
 }
-
-
-function writePassword() {
-    var password = generatePassword(); 
-    var passwordText = document.querySelector("#password");
     
-    passwordText.value = password;
+function getRandomUpper() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
-generateBTN.addEventListener("click", writePassword);
+function getRandomNumber() {
+    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+
+}
+
+function getRandomSymbol() {
+    const symbols = '!@#%&*(){}[]=<>/,.';
+    return symbols[Math.floor(Math.random() * symbols.length)];
+}
