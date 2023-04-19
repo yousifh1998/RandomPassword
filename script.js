@@ -1,11 +1,11 @@
-const resultEL = document.getElementById('result');
-const lengthEL = document.getElementById('length');
+const resultEl = document.getElementById('result');
+const lengthEl = document.getElementById('length');
 const uppercaseEL = document.getElementById('uppercase');
 const lowercaseEL = document.getElementById('lowercase');
-const numbersEL = document.getElementById('numbers');
-const symbolsEL = document.getElementById('symbols');
+const numbersEl = document.getElementById('numbers');
+const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
-const clipboardEL = document.getElementById('clipboard');
+const clipboardEl = document.getElementById('clipboard');
 
 
 
