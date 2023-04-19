@@ -1,7 +1,7 @@
 const resultEl = document.getElementById('result');
 const lengthEl = document.getElementById('length');
-const uppercaseEL = document.getElementById('uppercase');
-const lowercaseEL = document.getElementById('lowercase');
+const uppercaseEl = document.getElementById('uppercase');
+const lowercaseEl = document.getElementById('lowercase');
 const numbersEl = document.getElementById('numbers');
 const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
@@ -29,7 +29,6 @@ function getRandomLower() {
     
 function getRandomUpper() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
 
 function getRandomNumber() {
     return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
