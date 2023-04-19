@@ -17,10 +17,16 @@ const randomFunc = {
     Symbol: getRandomSymbol
 };
 
-generateEl.addEventListener('click', () => {
-    const length = lengthEl.value;
+prompt()
 
-    console.log(length);
+generateEl.addEventListener('click', () => {
+    const length = +lengthEl.value;
+    const hasLower = lowercaseEl.checked;
+    const hasUpper = uppercaseEl.checked;
+    const hasNumber = numbersEl.checked;
+    const hasSymbol = symbolsEl.checked;
+
+    console.log(hasLower, hasUpper, hasNumber, hasSymbol );
 });
 
 function getRandomLower() {
@@ -29,6 +35,7 @@ function getRandomLower() {
     
 function getRandomUpper() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
 
 function getRandomNumber() {
     return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
