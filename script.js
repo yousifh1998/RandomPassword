@@ -26,7 +26,7 @@ generateEl.addEventListener('click', () => {
     const hasNumber = numbersEl.checked;
     const hasSymbol = symbolsEl.checked;
 
-    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
+    resultEl.innerText = generatedPassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
 
@@ -56,7 +56,9 @@ function generatedPassword(lower, upper, number, symbol, length) {
       generatedPassword += randomFunc[FuncName]();
     } );
   }
-  console.log(generatedPassword);
+  const finalPassword = generatedPassword.slice(0, length);
+
+  return finalPassword;
 }
 
 
