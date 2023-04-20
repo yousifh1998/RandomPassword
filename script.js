@@ -2,7 +2,7 @@
 prompt()
 
 
-const resultEl = document.getElementById('result');
+const resultEl = document.getElementById('password');
 const lengthEl = document.getElementById('length');
 const uppercaseEl = document.getElementById('uppercase');
 const lowercaseEl = document.getElementById('lowercase');
